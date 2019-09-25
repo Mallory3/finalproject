@@ -94,24 +94,28 @@ aside {
    padding-top: 4em;
  }
 
+ h2 {
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   padding: 1em;
+ }
  #me {
-   border-radius: 50%;
    max-height: 30vmax;
    min-width: 30vmin;
    max-width: 30vmax;
    object-fit: cover; 
    padding: 2em;
    float: left;
-   /* display: block;
-   margin: auto; */
+   border-radius: 50%;
+   shape-outside: circle();
+   clip-path: circle();
  }
+ 
 
  p {
   font-family: 'Raleway', sans-serif;
   font-size: 100%;
-  shape-outside: circle();
-  float: left;
-
+  padding: 1em;
  }
 
 
