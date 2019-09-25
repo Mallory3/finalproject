@@ -2,6 +2,7 @@ a {
 	color: rgb(2, 0, 5);
 	text-decoration: none;
 	font-weight: bold;
+	font-size: 2.9vmin;
 }
 
 a:hover {
@@ -86,7 +87,7 @@ aside {
    margin-top: 0;
    color: white;
    font-family: 'Montserrat', sans-serif;
-   font-size: 1em;
+   font-size: 5vmin;
    display: block;
    margin: auto;
    text-align: right;
@@ -97,8 +98,10 @@ aside {
  h2 {
    text-align: center;
    font-family: 'Montserrat', sans-serif;
-   padding: 1em;
+	 padding: 1em;
+	 font-size: 5vmin;
  }
+ 
  #me {
    max-height: 30vmax;
    min-width: 30vmin;
@@ -114,8 +117,9 @@ aside {
 
  p {
   font-family: 'Raleway', sans-serif;
-  font-size: 100%;
-  padding: 1em;
+  font-size: 3vmin;
+	padding: 3em;
+	line-height: 4vmin;
  }
 
 
