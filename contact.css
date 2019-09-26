@@ -97,7 +97,7 @@ li {
   }
 }
 
-#hero {
+/* #hero {
   background-image: url("https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
   min-height: 100vmin;
   max-height: 100vmax;
@@ -108,19 +108,41 @@ li {
   background-position: top right;
 	background-attachment: fixed;
 	margin-bottom: 10em;
-}
+} */
 
 div {
+padding: 5em;
+padding-bottom: 3em;
+	width: 100%;
+
+	background-color:rgb(15, 17, 16);
+}
+
+h1 {
+font-size: 6vmin;
+font-family: 'Montserrat', sans-serif;
+width: 100%;
+color: white;
+background-color: (15, 17, 16);
+margin: 4vw;
+margin-bottom: 0vw;
+}
+
+main {
 	background-color: rgb(15, 17, 16);
 	background-image: url("https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=80");
 	background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center right;
+  background-size: cover;
+  background-position: top right;
 	background-attachment: fixed;
+} 
+
+@media (min-width:890px) {
+	main {background-size: contain;}
 }
 
 form {
-  padding-top: 2em;
+  padding-top: 1em;
   padding-left:10em;
   grid-column-start: 1;
   max-width: 100%;
@@ -134,17 +156,25 @@ color: white;
 text-align: left;
 border-radius: 5%;
 margin: .5em;
-margin-top: 10em;
+margin-top: 3em;
 background-color: black;
+font-family: 'Raleway', sans-serif;
+font-size: 20px;
+}
+
+legend {
+	font-size: 30px;
+	font-family: 'Montserrat', sans-serif; 
 }
 
 span {
-  color: red;
+  color: rgb(238, 23, 141);
   font-size:130%;
 }
 
 input {
-  font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
   border-radius: 5px; 
   padding: 1px 1px 3px 20px; 
   background-repeat: no-repeat; 
@@ -193,8 +223,8 @@ input#submit {
 	 background: -webkit-gradient(linear, left top, left bottom, from(#65376e), to(#209967));
    width: 100%;
   text-align: center;
-  padding: 1em;
-  margin-top: 1em;
+  padding: .5em;
+  margin-top: .5em;
 }
 
 input#submit:hover { 
@@ -212,6 +242,15 @@ input#submit:hover {
   margin: auto;
   margin-top: 1em;
 }
+
+footer {
+	height: 30vh;
+	background-color:rgb(15, 17, 16);
+	color: white;
+	text-align: center;
+	padding: 3em;
+}
+
 
 @media (max-width: 1075px) {
   fieldset {width:40vw;}
