@@ -1,5 +1,5 @@
 body {
-	background-color: black;
+	background-color:black;
 }
 a {
 	color: rgb(2, 0, 5);
@@ -112,7 +112,7 @@ div {
 	background-color:black;
 }
 #hero {
-  background-image: url("coding-edit.jpg");
+  background-image: url("codingpng.png");
   min-height: 100vmin;
   max-height: 100vmax;
   min-width: 100vmin;
@@ -146,9 +146,7 @@ body {
 		height: 100vmax;
 		padding-top: 50em;
 		margin-top: 15em;
-		background-image: url("");
-	
-		background-color: black;
+		background-color:black;
 	}
 	
 	

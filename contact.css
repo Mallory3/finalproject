@@ -219,8 +219,8 @@ input#submit {
 	font-family: 'Montserrat', sans-serif; 
 	border: 2px solid rgb(2, 32, 25);
 	 border-top: 2px solid #311047;
-	 background: (#209967);
-	 background: -webkit-gradient(linear, left top, left bottom, from(#65376e), to(#209967));
+	 background: (#9b408f);
+	 background: -webkit-gradient(linear, left top, left bottom, from(#ee3e09), to(#c927b3));
    width: 100%;
   text-align: center;
   padding: .5em;
