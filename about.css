@@ -2,11 +2,12 @@ a {
 	color: rgb(2, 0, 5);
 	text-decoration: none;
 	font-weight: bold;
-	font-size: 2.9vmin;
+	font-size: 2vmin;
+	font-family: 'Montserrat', sans-serif;
 }
 
 a:hover {
-	color: rgb(53, 12, 235);
+	color: rgb(40, 145, 92);
 }
 
 img {
@@ -35,7 +36,7 @@ header {
 
 nav {
 	float: right;
-	padding: 20px;	
+  padding: 20px;
 }
 
 #menu-icon {
@@ -61,10 +62,11 @@ li {
 }
 
 .current {
-	color: #2262AD;
+  color: rgb(40, 145, 92);
+  padding: 1em;
 }
 
-@media only screen and (max-width : 650px) {
+@media only screen and (max-width : 850px) {
 	header {
 		position: absolute;
 	}
@@ -95,8 +97,7 @@ li {
 	nav:hover ul {
 		display: block;
   }
-	}
-	
+}
 
 /*hero */
 
@@ -284,6 +285,53 @@ padding-bottom: 10vh;
 		}
 
 	}
+
+	footer {
+		height: 30vh;
+		background-color: black;
+		color: white;
+		text-align: center;
+		padding: 3em;
+		
+		display: grid;
+		grid-template-columns: 1fr 2fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+	}
+	
+	#copy {
+		font-size: 2.5vh;
+		grid-column: 2/3;
+	}
+	
+	div #socialicon {
+		grid-row-start: 2;
+		grid-column: 2/3;
+	
+	
+	
+	}
+	
+	#socialicon {
+		grid-row-start: 2;
+		grid-column: 2/3;
+		margin: auto;
+		display: flex;
+	
+	}
+	
+	.social {
+			margin: 20px;
+			/* float: left; */
+			width: 60px;
+			height: 40px;
+			display: block;
+		}
+	
+	
+	 
+	
+	
+	
 	
 	
 	
