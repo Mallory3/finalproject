@@ -95,4 +95,32 @@ li {
 	nav:hover ul {
 		display: block;
   }
-  }
+	}
+	
+	#grid {
+		margin-top: 20vh;
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-areas:
+		"card1 card2 card3";
+		margin: auto;
+		margin-top: 20vh;
+		grid-gap: 1em;
+
+
+	}
+	
+	#card1 {
+		grid-area: card1;
+		background-color: red;
+	}	
+
+	#card2 {
+		grid-area: card2;
+		background-color: blue;
+	}
+
+	#card3 {
+		grid-area: card3;
+		background-color: yellow;
+	}
