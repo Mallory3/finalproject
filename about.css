@@ -97,14 +97,85 @@ li {
   }
 	}
 	
+
+/*hero */
+
+
+#hero {
+  display: block;
+  max-height: 100vmax;
+  min-width: 100vmin;
+  max-width: 100vmax;
+  object-fit: cover; 
+  background-color: rgb(4, 2, 2);
+}
+
+#mobile {
+  display: block;
+  background-color: rgb(4, 2, 2);
+}
+
+@media (max-width: 1000px) {
+  #hero {display: none;}
+}
+
+@media screen and (min-width: 1000px) {
+  #mobile {display:none;}
+}
+
+h2 {
+	text-align: center;
+	font-family: 'Montserrat', sans-serif;
+	padding-top: 2em;
+	margin-bottom: 0;
+	font-size: 3vh;
+	display: inlinel
+}
+
+#me {
+	max-height: 27vmax;
+	min-width: 27vmin;
+	max-width: 27vmax;
+	object-fit: cover; 
+	padding: 2em;
+	float: left;
+	border-radius: 50%;
+	shape-outside: circle();
+	clip-path: circle();
+}
+
+
+p {
+ font-family: 'Raleway', sans-serif;
+ font-size: 110%;
+ padding: 3em;
+ padding-bottom: 0;
+ line-height: 5vmin;
+}
+
+/* #skilltitle {
+padding-bottom: 10vh;
+} */
+
+	main {
+		background-color: black;
+		padding-bottom: 5vh;
+	}
+
+	#skilltitle {
+		color: white;
+	}
 	#grid {
+		grid-row: 2;
 		margin: 5vh;
-		margin-top: 20vh;
 		display:grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
 		grid-template-areas:
 		"card1 card2 card3 card4";
 		grid-gap: 5vh;
+		
+	
+		
 
 
 	}
@@ -140,6 +211,9 @@ li {
 		grid-template-columns: 1fr 2fr 1fr 2fr 1fr;
 		grid-template-rows:1fr 3fr;
 		border-radius: 3%;
+		background: (#209967);
+		background: -webkit-gradient(linear, left top, left bottom, from(#65376e), to(#209967));
+		border: 1px solid black
 	
 }
 
@@ -165,7 +239,6 @@ li {
 
 		#grid {
 			margin: 5vh;
-			margin-top: 20vh;
 			display:grid;
 			grid-template-columns: 1fr 1fr;
 			grid-template-areas:
@@ -182,7 +255,6 @@ li {
 
 		#grid {
 			margin: 5vw;
-			margin-top: 20vh;
 			display:grid;
 			grid-template-columns: 1fr;
 			grid-template-areas:
