@@ -229,21 +229,12 @@ input#submit {
   margin-top: .5em;
 }
 
-input#submit:hover { 
-  background-color: #42f70b;
+#submit:hover { 
+	border-top-color: #0a0317;
+	background: #0a0317;
+	color: #ccc;
 }
 
-#register {
-  border:0px;
-  margin: auto;
-  padding:0;
-}
-
-#register1 {
-  display: flex;
-  margin: auto;
-  margin-top: 1em;
-}
 
 
 
