@@ -68,7 +68,7 @@ li {
 
 @media only screen and (max-width : 850px) {
 	header {
-		position: absolute;
+		position: fixed;
 	}
 
 	#menu-icon {
@@ -99,11 +99,12 @@ li {
   }
 }
 
+
 #hero {
   display: block;
-  max-height: 100vmax;
+  /* height: 100vmax;
   min-width: 100vmin;
-  max-width: 100vmax;
+  max-width: 100vmax; */
   object-fit: cover; 
   background-color: rgb(4, 2, 2);
 }
@@ -113,21 +114,44 @@ li {
   background-color: rgb(4, 2, 2);
 }
 
+#name {
+  position: absolute;
+  top: 20%;
+  left: 15%;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+}
+
+#name2 {
+  position: absolute;
+  top: 16%;
+  left: 16.5%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4ch;
+}
+
 aside {
-  height: 30vmin 35vmax;
+  height: 30vmin 55vmax;
   background-color: rgb(4, 2, 2);
   margin: 0;
+  padding-bottom: 2em;
+   padding-top: 1em;
 }
- h1 {
+ h3 {
    margin-top: 0;
-   color: rgb(250, 249, 252);
+   background: -webkit-linear-gradient(#4c0374, #0c926a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
    font-family: 'Montserrat', sans-serif;
-   font-size: 5vmin;
+   font-size: 4ch;
    display: block;
    margin: auto;
    text-align: right;
-   padding: 1em;
-   padding-top: 4em;
+   margin-right: 1em;
+ }
+
+ #name { 
+   color: white;
  }
 
  h2 {
@@ -135,7 +159,7 @@ aside {
    font-family: 'Montserrat', sans-serif;
 	 padding-top: 2em;
 	 margin-bottom: 0;
-	 font-size: 4.5vmin;
+	 font-size: 3ch;
  }
 
  #me {
@@ -171,7 +195,7 @@ aside {
     background: (#f023f0);
 		background: -webkit-gradient(linear, left top, left bottom, from(#f84a06), to(#f023df));
     padding: 19.5px 39px;
-    margin-bottom: 4em;
+    margin-bottom: 2em;
     margin-left: 28em;
     margin-top: 2.5em;
     border-radius: 26px;
@@ -197,18 +221,19 @@ aside {
 
  ul.boxes {
    background-color:  rgb(4, 2, 2);
-   margin-top: 5em;
+   margin-top: 3em;
    margin-bottom: 0;
  }
 
  .boxes a {
   text-decoration: none;
-  padding: .5rem;
+  padding: 1rem;
   margin: auto;
   text-align: center;
   color: white;
-  border: 2px solid white;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+  border: 3px solid white;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5ch;
 }
 
 
@@ -216,15 +241,8 @@ aside {
   color:greenyellow;
 }
 
-.boxes ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
 .boxes {
   padding: .5rem;
-  background-color:white;
   color: white;
   display: grid;
   grid-auto-rows: minmax(125px, auto);
@@ -232,7 +250,7 @@ aside {
   grid-gap: 1rem;
 } 
 
-@media screen and (min-width: 10em) {
+@media screen and (min-width: 600px) {
 
 .boxes li:nth-child(1) {
   grid-column: 1 / 3;
@@ -254,11 +272,8 @@ aside {
   background-repeat: no-repeat;
   }
 
-#span1 {
-  color: coral;
-}
 
-#learntitle a {
+.boxes a {
     text-decoration: none;
 }
 
@@ -293,12 +308,16 @@ aside {
 }
 
 footer {
-	height: 30vh;
-	background-color: black;
-	color: white;
-	text-align: center;
-  padding: 3em;
-  
+  background-color: black;
+  color: white;
+  position:fixed;
+   left:0px;
+   bottom:0px;
+   height:100px;
+   width:100%;
+   padding-top: .5em;
+   padding-bottom: .5em;
+  text-align: center;
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -344,14 +363,4 @@ div #socialicon {
 
 @media screen and (min-width: 1000px) {
   #mobile {display:none;}
-}
-
-
-
-
-
-@media only screen and (max-width: 650px) {
-	header {
-		position: absolute;
-	}
 }
